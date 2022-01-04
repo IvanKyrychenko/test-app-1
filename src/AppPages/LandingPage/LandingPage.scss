@@ -1,0 +1,65 @@
+$font-stack: "Georama", sans-serif;
+
+.background {
+    background-color: #0093e9;
+    background-image: linear-gradient(40deg, #0094e9d3 0%, #80d0c7 50%, #ffffffa2 100%);
+    backdrop-filter: brightness(10%) blur(10px);
+    min-height: 720px;
+}
+
+.wrapper {
+    font: 100% $font-stack;
+    font-weight: 600;
+    width: 1160px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.header {
+    display: flex;
+    font-size: 14px;
+    min-height: 50px;
+    justify-content: space-around;
+    .header-button {
+        margin: 10px 0px;
+        font-weight: bolder;
+    }
+}
+
+.content {
+    display: flex;
+    min-height: 150px;
+    background-color: #fcfcfc;
+    margin: 10px 0px;
+    .pic {
+        width: 25%;
+    }
+}
+
+.item-info {
+    position: relative;
+    display: flex;
+    width: 75%;
+}
+
+.item-name {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.item-details {
+    margin-top: 5px;
+    margin-left: 10px;
+    max-width: 75%;
+}
+
+.item-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    .details-button {
+        margin-right: 10px;
+    }
+}
