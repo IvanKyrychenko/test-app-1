@@ -31,35 +31,35 @@ $font-stack: "Georama", sans-serif;
     display: flex;
     min-height: 150px;
     background-color: #fcfcfc;
-    margin: 10px 0px;
+    margin-bottom: 10px;
     .pic {
         width: 25%;
     }
-}
 
-.item-info {
-    position: relative;
-    display: flex;
-    width: 75%;
-}
+    .item-info {
+        position: relative;
+        display: flex;
+        width: 75%;
 
-.item-name {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 30px;
-}
+        .item-name {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
 
-.item-details {
-    margin-top: 5px;
-    margin-left: 10px;
-    max-width: 75%;
-}
+        .item-details {
+            margin-top: 20px;
+            margin-left: 10px;
+            max-width: 75%;
+        }
 
-.item-buttons {
-    position: absolute;
-    bottom: 20px;
-    right: 40px;
-    .details-button {
-        margin-right: 10px;
+        .item-buttons {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            .details-button {
+                margin-right: 10px;
+            }
+        }
     }
 }
