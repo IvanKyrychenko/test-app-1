@@ -32,8 +32,11 @@ $font-stack: "Georama", sans-serif;
     min-height: 150px;
     background-color: #fcfcfc;
     margin-bottom: 10px;
+    border-radius: 25px;
     .pic {
         width: 25%;
+        border-radius: 25px;
+
     }
 
     .item-info {

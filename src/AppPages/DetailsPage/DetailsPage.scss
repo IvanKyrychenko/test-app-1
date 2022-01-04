@@ -4,4 +4,49 @@ $font-stack: "Georama", sans-serif;
     background-color: #0093e9;
     background-image: linear-gradient(40deg, #0094e9d3 0%, #80d0c7 50%, #ffffffa2 100%);
     backdrop-filter: brightness(10%) blur(10px);
-    min-height: 720px;}
+    min-height: 720px;
+}
+
+.item-details-header {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.details-content {
+    display: flex;
+    min-height: 300px;
+    background-color: #fcfcfc;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    .details-pic {
+        width: 25%;
+        height: 50%;
+        border-radius: 25px;
+        margin-top: 50px;
+    }
+}
+
+.details-item-info {
+    position: relative;
+    display: flex;
+    width: 75%;
+
+    .details-item-name {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .details-item-details {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 30px;
+        max-width: 75%;
+    }
+
+    .details-comment {
+        margin-top: 15px;
+        margin-left: 30px;
+        width: 75%
+    }
+}

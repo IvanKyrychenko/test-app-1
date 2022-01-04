@@ -1,23 +1,26 @@
 import './LandingPage.scss';
+import { useSelector } from 'react-redux'
 import { Menu, Dropdown } from 'antd';
 import ItemContent from './ItemContent';
 import AddItemModal from './AddItemModal/AddItemModal';
 
-function handleMenuClick(e) {
-    console.log('click', e);
-}
-
-const menu = (
-    <Menu onClick={handleMenuClick}>
-        <Menu.Item key="1">A {'>'} Z</Menu.Item>
-        <Menu.Item key="2">Z {'>'} A</Menu.Item>
-        <Menu.Item key="1">Amount +</Menu.Item>
-        <Menu.Item key="1">Amount -</Menu.Item>
-    </Menu>
-);
-
-
 const LandingPage = () => {
+
+    const items = useSelector(state => state.products.items)
+
+    const menu = (
+        <Menu onClick={handleMenuClick}>
+            <Menu.Item >A {'>'} Z</Menu.Item>
+            <Menu.Item >Z {'>'} A</Menu.Item>
+            <Menu.Item >Amount +</Menu.Item>
+            <Menu.Item >Amount -</Menu.Item>
+        </Menu>
+    );
+
+    function handleMenuClick(e) {
+        console.log('click', e);
+    }
+
     return (
         <div>
             <div className='background'>
@@ -26,9 +29,7 @@ const LandingPage = () => {
                         <AddItemModal className='header-button' />
                         <Dropdown.Button className='header-button' overlay={menu}>Sort By</Dropdown.Button>
                     </div>
-                    <ItemContent />
-                    <ItemContent />
-                    <ItemContent />
+                    {items.map(item => <ItemContent data={item} />)}
                 </div>
             </div>
         </div>
